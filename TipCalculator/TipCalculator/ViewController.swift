@@ -11,17 +11,17 @@ import UIKit
 class ViewController: UIViewController {
 
 
+    @IBOutlet weak var inputBillTextField: UITextField!
     @IBOutlet weak var AnswerLabel: UILabel!
     @IBOutlet weak var TwentyPercentButton: UIButton!
     @IBOutlet weak var EighteenPercentButton: UIButton!
     @IBOutlet weak var FifteenPercentButton: UIButton!
-    @IBOutlet weak var inputBillTextField: UITextField!
-
+    
     @IBAction func show20PercentTip(_ sender: Any) {
-        tc.beforeTip = (inputBillTextField.text! as NSString).doubleValue
-        tc.tipPercentage = 0.20
-        tc.calculateTip()
-        AnswerLabel.text = String(format:"%.2f", tc.afterTip)
+                tc.beforeTip = (inputBillTextField.text! as NSString).doubleValue
+                tc.tipPercentage = 0.20
+                tc.calculateTip()
+                AnswerLabel.text = String(format:"%.2f", tc.afterTip)
     }
     
     var tc = TC(beforeTip:0, tipPercentage:0)
