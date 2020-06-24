@@ -23,10 +23,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llP-gR-Qqi">
                                 <rect key="frame" x="66" y="175" width="30" height="30"/>
                                 <state key="normal" title="15%"/>
+                                <connections>
+                                    <action selector="show15PercentTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="59D-ZM-vwO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prJ-Er-mdT">
                                 <rect key="frame" x="184" y="175" width="30" height="30"/>
                                 <state key="normal" title="18%"/>
+                                <connections>
+                                    <action selector="show18PercentTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ehC-F4-34U"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wto-jf-Eit">
                                 <rect key="frame" x="303" y="175" width="31" height="30"/>
@@ -35,8 +41,11 @@
                                     <action selector="show20PercentTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vSj-Jc-hX6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-tr-mng">
-                                <rect key="frame" x="178" y="252" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-tr-mng">
+                                <rect key="frame" x="107" y="236" width="351" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="oJ9-vy-vvO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,16 +53,17 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ffb-tr-mng" firstAttribute="centerX" secondItem="mHd-Ck-z9A" secondAttribute="centerX" id="4ia-tc-VSp"/>
                             <constraint firstItem="prJ-Er-mdT" firstAttribute="baseline" secondItem="Wto-jf-Eit" secondAttribute="baseline" id="6AK-Eq-mB1"/>
                             <constraint firstItem="llP-gR-Qqi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="131" id="6LJ-PB-MP1"/>
                             <constraint firstItem="llP-gR-Qqi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="JfK-a2-bdC"/>
                             <constraint firstItem="prJ-Er-mdT" firstAttribute="leading" secondItem="llP-gR-Qqi" secondAttribute="trailing" constant="88" id="K1b-a0-VVz"/>
-                            <constraint firstItem="ffb-tr-mng" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="178" id="WiC-12-bkb"/>
+                            <constraint firstItem="ffb-tr-mng" firstAttribute="top" secondItem="llP-gR-Qqi" secondAttribute="bottom" constant="38" id="Kah-ux-RXR"/>
                             <constraint firstItem="llP-gR-Qqi" firstAttribute="baseline" secondItem="prJ-Er-mdT" secondAttribute="baseline" id="bnB-Rv-Pni"/>
-                            <constraint firstItem="ffb-tr-mng" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="252" id="cvK-MC-OUD"/>
                             <constraint firstItem="mHd-Ck-z9A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="fo2-bp-PBF"/>
                             <constraint firstItem="Wto-jf-Eit" firstAttribute="leading" secondItem="prJ-Er-mdT" secondAttribute="trailing" constant="89" id="imS-hi-Ix5"/>
                             <constraint firstItem="mHd-Ck-z9A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="oVr-nM-Ejh"/>
+                            <constraint firstItem="ffb-tr-mng" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="uDA-g9-Ie4"/>
                             <constraint firstItem="mHd-Ck-z9A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v8e-Aa-eDP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -68,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="29"/>
+            <point key="canvasLocation" x="13.043478260869566" y="12.723214285714285"/>
         </scene>
     </scenes>
 </document>

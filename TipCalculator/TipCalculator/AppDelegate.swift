@@ -2,10 +2,12 @@
 //  AppDelegate.swift
 //  TipCalculator
 //
-//  Created by user176496 on 6/13/20.
-//  Copyright © 2020 user176496. All rights reserved.
-//
-
+/*
+ NAME: Tora Mullings
+ SB ID: 111407756
+ 
+ Some of this code was taken from the textbook.
+ */
 import UIKit
 
 @UIApplicationMain
